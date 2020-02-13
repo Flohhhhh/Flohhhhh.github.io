@@ -117,7 +117,7 @@ footer{
 .maxim{
   display: flex;
   height: 80vh;
-  background-color: black;
+  background-color: rgb(30,30,30);
   justify-content: center;
   align-items: center;
 }

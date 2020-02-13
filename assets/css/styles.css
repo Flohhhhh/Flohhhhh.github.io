@@ -1,0 +1,130 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* Main Style */
+body{
+
+  margin-left: 50px;
+  margin-top: 80px;
+  margin-right: 50px;
+
+  background-color: rgb(25,25,25);
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  /* Weights: 400,600,700 */
+
+}
+
+/* Defaults */
+/* I was tryign to do these 2 below changes in .headerlinks, not sure why it wasn't working. */
+a{
+  color: grey;
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+/* h1{
+  font-weight: 600;
+  font-size: 16pt;
+} */
+
+h6{
+  font-weight: 400;
+  font-size: 12pt;
+  margin: 0px;
+}
+
+p{
+  font-size: 12pt;
+  color: lightgrey;
+}
+
+#Video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* Header */
+
+header{
+  position: fixed;
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0));
+  width: 100vw;
+  top: 0px;
+  left: 0px;
+}
+.headercontent{
+  margin-left: 50px;
+  font-size: 18pt;
+}
+.pages{
+  position: absolute;
+  top: 0px;
+  right: 50px;
+  font-weight: 700px;
+}
+.headerlinks{
+  display: inline-block;
+  margin-left: 10px;
+}
+#name{
+  font-size: 20pt;
+  font-weight: 700;
+}
+#urhere a{
+  color: white;
+}
+
+/* Works Page Images */
+.GridContainer{
+  display: flex;
+
+}
+
+.WorkImages img{
+  width: 100%;
+  margin-top: 10px
+
+}
+
+/* Footer */
+
+footer{
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  height: 120px;
+  background-color: rgb(12,12,12);
+  margin-left: -50px;
+}
+
+  .FooterContent{
+    align-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .FooterLeft{
+    display: inline-block;
+  }
+  .FooterRight{
+    display: inline-block;
+    position: relative;
+    float: right;
+  }
+
+  .footeranchors{
+    /* color: grey; */
+    font-size: 10pt;
+    padding-left: 10px;
+  }

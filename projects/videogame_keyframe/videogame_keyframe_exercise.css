@@ -1,0 +1,107 @@
+/*RESETS*/
+*{
+    margin:0px;
+    padding:0px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*The code above resets box-sizing & margins and padding on all elements*/
+/*Your CSS code goes below*/
+
+
+body{
+    background-color:rgb(15,15,15);
+    height:100vh;
+
+
+}
+
+.redone{
+  width: 180px;
+  transform:translateY(-900px);
+  animation-name: down;
+  animation-duration: 7s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.two{
+  width: 180px;
+  transform:translateY(-900px);
+  animation-name: down;
+  animation-duration: 7s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.three{
+  width: 180px;
+  transform:translateY(-900px);
+  animation-name: down;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.four{
+  width: 180px;
+  transform:translateY(-900px);
+  animation-name: down;
+  animation-duration: 7s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.five{
+  width: 180px;
+  transform:translateY(-900px);
+  animation-name: down;
+  animation-duration: 7s;
+  animation-delay: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.six{
+  width: 180px;
+  transform:translateY(-900px);
+  animation-name: down;
+  animation-duration: 7s;
+  animation-delay: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.seven{
+  width: 180px;
+  transform:translateY(-900px);
+  animation-name: down;
+  animation-duration: 7s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.eight{
+  width: 180px;
+
+  transform: translateY(-900px);
+  animation-name: down;
+  animation-duration: 7s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+@keyframes down {
+  0%{
+    transform: translateY(-900px);
+  }
+  100%{
+    transform: translateY(1300px);
+  }
+}

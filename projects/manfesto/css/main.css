@@ -1,0 +1,107 @@
+body{
+
+  padding-top: 20px;
+
+  background-color: rgb(25,25,25);
+  color: lightgrey;
+  font-family: 'Open Sans', sans-serif;
+  /* Weights: 400,600,700 */
+  font-weight: 400;
+  font-size: 16px;
+
+}
+
+h1{
+  color: white;
+  line-height: normal;
+  font-size: 48px;
+  line-height:12px;
+}
+
+h3{
+  color: white;
+  line-height: normal;
+}
+
+a{
+  color: darkgrey;
+}
+.egyptian{
+  color: deepskyblue;
+  font-size: 20px;
+  font-weight: bold;
+}
+#lineOne{
+  color: rgb(43, 100, 255);
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 10px;
+}
+
+#lineOne:hover{
+  color: white;
+}
+
+#lineTwo{
+  color: rgb(105, 145, 255);
+
+}
+
+#lineThree{
+  color: rgb(158, 184, 255);
+}
+
+#lineFour{
+    color: rgb(207, 219, 255);
+}
+
+/* Break */
+
+#lineFive:hover{
+  color: white;
+}
+
+  #lineFive{
+    color: rgb(255, 61, 61);
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 10px;
+  }
+
+  #lineSix{
+    color: rgb(255, 110, 110);
+
+  }
+
+  #lineSeven{
+    color: rgb(255, 156, 156);
+  }
+
+  #lineEight{
+    color: rgb(255, 199, 199);
+  }
+
+/* Break */
+
+#lineNine:hover{
+  color: white;
+}
+
+  #lineNine{
+    color: rgb(145, 61, 255);
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 10px;
+  }
+
+  #lineTen{
+    color: rgb(174, 112, 255);
+  }
+
+  #lineEleven{
+    color: rgb(197, 153, 255);
+  }
+
+  #lineTwelve{
+    color: rgb(227, 207, 255);
+  }

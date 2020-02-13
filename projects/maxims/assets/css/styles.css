@@ -1,0 +1,179 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* Main Style */
+body{
+
+  margin-left: 50px;
+  margin-top: 80px;
+  margin-right: 50px;
+
+  background-color: rgb(15,15,15);
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  /* Weights: 400,600,700 */
+
+}
+
+/* Defaults */
+/* I was tryign to do these 2 below changes in .headerlinks, not sure why it wasn't working. */
+a{
+  color: grey;
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+h1{
+  font-weight: 600;
+  font-size: 16pt;
+}
+
+h6{
+  font-weight: 400;
+  font-size: 12pt;
+  margin: 0px;
+}
+
+p{
+  font-size: 12pt;
+  color: lightgrey;
+}
+
+/* Header */
+
+header{
+  position: fixed;
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0));
+  width: 100vw;
+  top: 0px;
+  left: 0px;
+
+}
+.headercontent{
+  margin-left: 50px;
+  font-size: 18pt;
+}
+.pages{
+  position: absolute;
+  top: 0px;
+  right: 50px;
+  font-weight: 700px;
+}
+.headerlinks{
+  display: inline-block;
+  margin-left: 10px;
+}
+#name{
+  font-size: 20pt;
+  font-weight: 700;
+}
+#urhere a{
+  color: white;
+}
+
+/* Footer */
+
+footer{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 10%;
+  background-color: rgb(12,12,12);
+  margin-left: -50px;
+}
+
+  .FooterContent{
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 25px;
+  }
+  .FooterLeft{
+    display: inline-block;
+  }
+  .FooterRight{
+    display: inline-block;
+    position: relative;
+    float: right;
+  }
+
+  .footeranchors{
+    /* color: grey; */
+    font-size: 10pt;
+    padding-left: 10px;
+  }
+
+.controls{
+  margin-bottom: 20px;
+}
+
+/* Maxims */
+
+.maxim{
+  display: flex;
+  height: 80vh;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Maxim one */
+.maximone{
+  font-size: 32px;
+}
+
+#lawn{
+  font-weight: bold;
+  font-style: italic;
+  animation-name: expand;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-direction: alternate;
+}
+
+#police{
+  font-weight: bold;
+  color: dodgerblue;
+  animation-name: redblue;
+  animation-duration: .15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+
+#exclaim{
+  color: red
+}
+
+/* Maxim two */
+#racist{
+  font-style: italic;
+  color: grey;
+}
+
+
+/* keyframes */
+
+@keyframes expand {
+  0%{
+    font-size: 16px;
+  }
+  100%{
+    font-size: 36px;
+  }
+}
+
+@keyframes redblue {
+  0%{
+    color: red;
+  }
+  100%{
+    color: dodgerblue;
+  }
+}

@@ -1,0 +1,91 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    height:100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(25,25,25);
+    color: white;
+
+}
+
+
+.row {
+    margin: 0 10px;
+    padding: 10px;
+}
+
+p {
+    font-size: 2em;
+    font-family: Arial;
+}
+
+#one{
+  animation-name: spin;
+  animation-duration: .5s;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+  animation-direction: forward;
+  animation-timing-function: steps(1);
+}
+
+#two{
+  font-style: italic;
+  animation-name: bounce;
+  animation-duration: .5s;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+
+#three{
+
+  font-weight: bold;
+  animation-name: expand;
+  animation-duration: 3s;
+  animation-play-state: running;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+
+@keyframes expand {
+
+  0%{
+    font-size: 200%;
+  }
+  100%{
+    font-size: 400%;
+  }
+}
+
+@keyframes bounce {
+  0%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes spin {
+  0%{
+    transform: rotateZ(0deg);
+  }
+  33%{
+    transform: rotateZ(20deg);
+  }
+  66%{
+    transform: rotateZ(-20deg);
+  }
+  100%{
+    transform: rotateZ(0deg);
+  }
+}

@@ -157,6 +157,76 @@ footer{
   color: grey;
 }
 
+/* Maxim three */
+.maximthree {
+
+  animation-name: fade;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+
+/* Maxim 4 */
+
+.maximfour{
+  display: inline-block;
+
+}
+
+.wiggle{
+  font-size: 32px;
+  display: inline-block;
+  animation-name: wiggle;
+  animation-duration: .1s;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.shake{
+  animation-name: expand;
+  animation-duration: .2s;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* Maxim 5 */
+.maximfive{
+  animation-name: expand;
+  animation-duration: 1s;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+/* Maxim 6 */
+#bodyslam{
+  animation-name: expand;
+  animation-duration: .2s;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+/* Maxim 7 */
+
+#light{
+  animation-name: expandbig;
+  animation-duration: .5s;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+
+/* Maxim 8 */
+.back{
+  color: black
+}
+
+.the{
+  color: blue
+}
 
 /* keyframes */
 
@@ -169,11 +239,38 @@ footer{
   }
 }
 
+@keyframes expandbig {
+  0%{
+    font-size: 16px;
+  }
+  100%{
+    font-size: 120px;
+  }
+}
+
 @keyframes redblue {
   0%{
     color: red;
   }
   100%{
     color: dodgerblue;
+  }
+}
+
+@keyframes fade {
+  0%{
+    color: black;
+  }
+  100%{
+    opacity: 85%;
+  }
+}
+
+@keyframes wiggle {
+  0%{
+    transform: rotateZ(-20deg);
+  }
+  100%{
+    transform: rotateZ(20deg);
   }
 }

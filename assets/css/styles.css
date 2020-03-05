@@ -10,6 +10,7 @@ body{
   margin-left: 50px;
   margin-top: 80px;
   margin-right: 50px;
+  margin-bottom: 200px;
 
   background-color: rgb(25,25,25);
   color: white;
@@ -43,6 +44,10 @@ h6{
 p{
   font-size: 12pt;
   color: lightgrey;
+}
+
+iframe{
+  border: none;
 }
 
 #Video {

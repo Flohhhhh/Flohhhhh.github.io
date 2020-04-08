@@ -103,6 +103,14 @@ header{
 
 }
 
+.content{
+  margin-top: 120px;
+  max-width: 60vw
+}
+
+.projects{
+  margin-top: 120px;
+}
 /* Footer */
 
 footer{

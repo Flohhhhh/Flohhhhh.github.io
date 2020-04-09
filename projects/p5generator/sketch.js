@@ -20,6 +20,8 @@ let scl = 40;
 
 let cnv;
 
+// https://github.com/processing/p5.js/wiki/Positioning-your-canvas
+// https://github.com/awgreenblatt/gradientmaps
 
 function setup() {
   cnv = createCanvas(windowWidth-120, 800);

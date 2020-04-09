@@ -109,7 +109,7 @@ footer{
   position: fixed;
   bottom: 0px;
   width: 100vw;
-  height: 120px;
+  height: 60px;
   background-color: rgb(12,12,12);
   margin-left: -50px;
 }
@@ -138,6 +138,10 @@ footer{
 
 /* Generator */
 
+
+.generator{
+}
+
 .generator-container{
 }
 
@@ -146,12 +150,10 @@ footer{
 }
 
 .pcode-container{
-  margin-top: 25px;
+  margin-top: 75px;
   background-color: #0D0D0D;
-  min-height: 500px;
-}
-
-.pcode-content{
-  padding-left: 20px;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
   padding-top: 1px;
+  padding-left: 30px;
 }

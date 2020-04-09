@@ -13,17 +13,17 @@ let flowfield = [];
 
 //Flowfield settings
 let strength = .4
-let birthamt = 40;
-let scl = 60;
+let birthamt = 2400;
+let scl = 40;
 
-let color = (50,50,50,255)
+//let color = (140, 153, 255, 4)
 
 let cnv;
 
 
 function setup() {
   cnv = createCanvas(windowWidth-120, 800);
-  cnv.addClass("generator")
+  //cnv.parent('generator-holder');
   background(255);
 
   cols = floor(width/scl)
@@ -34,7 +34,7 @@ function setup() {
 
   // Create Particles
   for (let i = 0; i < birthamt; i++) {
-    particles[i] = new Particle('#E8BAC8');
+    particles[i] = new Particle();
   }
 
 }

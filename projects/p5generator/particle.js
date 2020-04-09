@@ -17,8 +17,8 @@ function Particle(color) {
 
   this.show = function() {
 
-    stroke(this.color);
-    strokeWeight(10);
+    stroke(0,4);
+    strokeWeight(2);
     line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y)
 
     this.updatePrev();

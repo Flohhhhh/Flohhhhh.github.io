@@ -97,10 +97,15 @@ header{
 
 }
 
-.WorkImages img{
-  width: 100%;
-  margin-top: 10px
-
+.images{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.example{
+  width: 40%;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 /* Footer */

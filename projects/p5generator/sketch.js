@@ -12,6 +12,7 @@ let sliderG
 let sliderB
 let sliderA
 let sliderWeight
+let colorPicker
 
 //Flowfield settings
 let strength = .4
@@ -31,12 +32,13 @@ let cnv;
 // https://github.com/awgreenblatt/gradientmaps
 
 function setup() {
-  cnv = createCanvas(windowWidth-120, 800);
+  cnv = createCanvas(windowWidth-120, 700);
   //cnv.parent('generator-holder');
   background(255);
   // Color Mode
   colorMode(RGB, 255, 255, 255, 1);
 
+  colorPicker = createColorPicker('#9FA0EB');
 
   // Controls Setup
   // Color Sliders
@@ -88,11 +90,6 @@ function draw() {
 
 
   // Controls
-  function mouseClicked() {
-  ellipse(mouseX, mouseY, 5, 5);
-  // prevent default
-  return false;
-}
 
   // Color Sliders
   colorR = sliderR.value();
@@ -117,6 +114,6 @@ function draw() {
 
 function keyTyped() {
   if (key === 'q'){
-    background(255)
+    background(colorPicker.value())
   }
 }

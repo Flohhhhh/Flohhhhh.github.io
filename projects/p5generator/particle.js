@@ -15,10 +15,10 @@ function Particle(color) {
   }
   this.color = color
 
-  this.show = function() {
+  this.show = function(colorR, colorG, colorB, alpha ,weight) {
 
-    stroke(0,4);
-    strokeWeight(2);
+    stroke(colorR, colorG, colorB, alpha);
+    strokeWeight(weight);
     line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y)
 
     this.updatePrev();

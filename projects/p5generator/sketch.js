@@ -1,22 +1,29 @@
 
+// Setup variables
 let inc = .3;
 let complexity = .5;
-
-
 var cols, rows;
-
 let zoff = 0;
-
 let particles = [];
-
 let flowfield = [];
+
+let sliderR
+let sliderG
+let sliderB
+let sliderA
+let sliderWeight
 
 //Flowfield settings
 let strength = .4
 let birthamt = 2400;
 let scl = 40;
 
-//let color = (140, 153, 255, 4)
+// Drawing settings
+let colorR = 0
+let colorG = 100
+let colorB = 255
+let alpha = .1
+let weight = 2
 
 let cnv;
 
@@ -27,6 +34,18 @@ function setup() {
   cnv = createCanvas(windowWidth-120, 800);
   //cnv.parent('generator-holder');
   background(255);
+  // Color Mode
+  colorMode(RGB, 255, 255, 255, 1);
+
+
+  // Controls Setup
+  // Color Sliders
+  sliderR = createSlider(0, 255, 0, 0);
+  sliderG = createSlider(0, 255, 0, 0);
+  sliderB = createSlider(0, 255, 0, 0);
+  sliderA = createSlider(0, .05, .01, 0);
+  // Weight Slider
+  sliderWeight = createSlider(0,10,2,0);
 
   cols = floor(width/scl)
   rows = floor(height/scl)
@@ -63,18 +82,27 @@ function draw() {
 
       xoff += inc;
 
-      // stroke(0,0);
-      // strokeWeight(1);
-      // push();
-      // translate(x * scl, y * scl)
-      // rotate(v.heading());
-      // line(0, 0, scl, 0);
-      // pop();
-
     }
     yoff += inc;
     zoff += 0.001;
+
+
+  // Controls
+  function mouseClicked() {
+  ellipse(mouseX, mouseY, 5, 5);
+  // prevent default
+  return false;
+}
+
+  // Color Sliders
+  colorR = sliderR.value();
+  colorG = sliderG.value();
+  colorB = sliderB.value();
+  alpha = sliderA.value();
+  // Weight Slider
+  weight = sliderWeight.value();
   }
+
 
 
 // Update particles
@@ -82,7 +110,13 @@ function draw() {
     particles[i].follow(flowfield);
     particles[i].update();
     particles[i].edges();
-    particles[i].show();
+    particles[i].show(colorR, colorG, colorB, alpha ,weight);
   }
 
+}
+
+function keyTyped() {
+  if (key === 'q'){
+    background(255)
+  }
 }

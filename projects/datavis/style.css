@@ -25,6 +25,9 @@ a{
   text-decoration: none;
 }
 
+.link{
+  margin-bottom: 50px;
+}
 ul{
   list-style-type: none;
 }
